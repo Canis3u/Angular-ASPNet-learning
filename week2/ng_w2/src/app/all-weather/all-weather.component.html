@@ -1,0 +1,33 @@
+<div class="container mt-5">
+  <label>Summary</label>
+  <select [(ngModel)]="filter">
+    <option *ngFor="let s of summaryList" value={{s}}>{{s}}</option>
+  </select>
+  <button (click)="filterby()">Search</button>
+  <button (click)="cancel()">Cancel</button>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th (click)="sort(col)" *ngFor="let col of displayedColumns">{{col}}</th>
+        <th>Update</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let w of viewWeatherSrc">
+        <td>{{ w.id }}</td>
+        <td>{{ w.date }}</td>
+        <td>{{ w.tempC }}</td>
+        <td>{{ w.tempF }}</td>
+        <td>{{ w.summary }}</td>
+        <td>
+          <button [routerLink]="['/edit-weather', w.id]">edit</button>
+        </td>
+        <td>
+          <button (click)="delete(w.id)">delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button routerLink="/add-weather">add</button>
+</div>

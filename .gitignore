@@ -326,3 +326,11 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+week1/ng_w1/.vscode/extensions.json
+week1/ng_w1/.vscode/extensions.json
+week1/ng_w1/.vscode/launch.json
+week1/ng_w1/.vscode/tasks.json
+*.sln
+week2/ng_w2/.vscode/extensions.json
+week2/ng_w2/.vscode/launch.json
+week2/ng_w2/.vscode/tasks.json

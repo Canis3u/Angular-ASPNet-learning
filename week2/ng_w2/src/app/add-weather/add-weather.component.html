@@ -1,0 +1,19 @@
+<div class="container addweathercast-container">
+  <div>
+    <h3 style="text-align: center">Add New Weathercast Data</h3>
+    <div style="text-align: center">
+      <label>TempC</label>
+      <input type="text" title="TempC" [(ngModel)] ="weathercastForm.tempC">
+    </div>
+    <div style="text-align: center">
+      <label>Summary</label>
+      <!--<input type="text" title="Summary" [(ngModel)] ="weathercastForm.summary">-->
+      <select [(ngModel)]="weathercastForm.summary">
+        <option *ngFor="let s of summaryList" value={{s}}>{{s}}</option>
+      </select>
+    </div>
+    <div style="text-align: center">
+      <button color="primary" (click)="create()">Create</button>
+    </div>
+  </div>
+</div>

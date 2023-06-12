@@ -1,0 +1,45 @@
+<div class="container">
+  <h1> Display Data from Json File in Angular 9 </h1>
+  <button on-click="addBtn()">ADD</button>
+  <button on-click="delBtn()">DELETE</button>
+  <table class="table table-striped center">
+    <thead>
+      <tr>
+        <th class="tr">Date</th>
+        <th>C</th>
+        <th>F</th>
+        <th>Summary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let w of _weather">
+        <td text-align="right">{{ w.date }}</td>
+        <td class="tc">{{ w.temperatureC }}</td>
+        <td class="tc">{{ w.temperatureF }}</td>
+        <td class="tc">{{ w.summary }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<style>
+  table {
+    width:100%;
+  }
+  button {
+    width:100%;
+  }
+  .tr{
+    text-align: left;
+  }
+  .tc {
+    text-align: center;
+  }
+  table {
+    border-collapse: collapse;
+  }
+
+table, th, td {
+    border: 1px solid black;
+}
+</style>

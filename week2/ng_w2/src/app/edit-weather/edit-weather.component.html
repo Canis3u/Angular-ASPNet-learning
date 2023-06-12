@@ -1,0 +1,16 @@
+<div class="container addweathercast-container">
+  <div>
+    <h3 style="text-align: center">Edit Weathercast Data</h3>
+    <div style="text-align: center">
+      <label>TempC</label>
+      <input type="text" title="TempC" [(ngModel)]="addweathercastForm.tempC">
+    </div>
+    <div style="text-align: center">
+      <label>Summary</label>
+      <input type="text" title="Summary" [(ngModel)]="addweathercastForm.summary">
+    </div>
+    <div style="text-align: center">
+      <button color="primary" (click)="update()">Update</button>
+    </div>
+  </div>
+</div>

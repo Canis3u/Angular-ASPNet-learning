@@ -1,0 +1,15 @@
+table {
+  width: 80%;
+}
+
+.allweathercast-container {
+  padding: 20px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+tr {
+    text-align:center;
+}

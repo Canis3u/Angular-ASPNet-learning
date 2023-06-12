@@ -1,0 +1,62 @@
+[
+  {
+    "date": "2023-06-03T14:34:19.6899411+08:00",
+    "temperatureC": 39,
+    "temperatureF": 102,
+    "summary": "Bracing"
+  },
+  {
+    "date": "2023-06-04T14:34:19.6899438+08:00",
+    "temperatureC": -3,
+    "temperatureF": 27,
+    "summary": "Warm"
+  },
+  {
+    "date": "2023-06-05T14:34:19.6899441+08:00",
+    "temperatureC": -1,
+    "temperatureF": 31,
+    "summary": "Chilly"
+  },
+  {
+    "date": "2023-06-06T14:34:19.6899443+08:00",
+    "temperatureC": 41,
+    "temperatureF": 105,
+    "summary": "Sweltering"
+  },
+  {
+    "date": "2023-06-07T14:34:19.6899445+08:00",
+    "temperatureC": 27,
+    "temperatureF": 80,
+    "summary": "Balmy"
+  },
+  {
+    "date": "2023-06-03T14:34:58.3703951+08:00",
+    "temperatureC": 34,
+    "temperatureF": 93,
+    "summary": "Chilly"
+  },
+  {
+    "date": "2023-06-04T14:34:58.3703982+08:00",
+    "temperatureC": 18,
+    "temperatureF": 64,
+    "summary": "Cool"
+  },
+  {
+    "date": "2023-06-05T14:34:58.3703983+08:00",
+    "temperatureC": 14,
+    "temperatureF": 57,
+    "summary": "Sweltering"
+  },
+  {
+    "date": "2023-06-06T14:34:58.3703984+08:00",
+    "temperatureC": 8,
+    "temperatureF": 46,
+    "summary": "Hot"
+  },
+  {
+    "date": "2023-06-07T14:34:58.3703986+08:00",
+    "temperatureC": 29,
+    "temperatureF": 84,
+    "summary": "Warm"
+  }
+]

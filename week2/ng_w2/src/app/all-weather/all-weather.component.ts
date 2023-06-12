@@ -24,7 +24,8 @@ export class AllWeatherComponent implements OnInit{
   constructor(
     private weatherCastService: WeatherCastService,
   ) { }
-  
+
+  //button click
   get() {
     this.weatherCastService.get().subscribe((data) => {
       this.allWeatherSrc = data;
@@ -32,6 +33,7 @@ export class AllWeatherComponent implements OnInit{
     });
   }
 
+  //button click
   delete(id: number) {
     this.weatherCastService.delete(id).subscribe((data:any) => {
       this.allWeatherSrc = this.allWeatherSrc.filter(
@@ -41,6 +43,7 @@ export class AllWeatherComponent implements OnInit{
     });
   }
 
+  //button click
   filterby() {
     if (this.filter == '') {
       alert("Selet a filter first!");
@@ -52,20 +55,20 @@ export class AllWeatherComponent implements OnInit{
     });
   }
 
+  //button click
   cancel() {
     this.get()
     this.filter = '';
   }
 
-
+  //button click
   sort(col:string) {
     console.log(col);
     if (col == this.last)
-      this.direction = !this.direction;
+      this.direction = !this.direction; //若重複點擊, 判定為升冪降冪轉換
     else
-      this.direction = true;
+      this.direction = true; //若是新的, 則重置sort排序
     const isAsc = this.direction;
-
     const data = this.allWeatherSrc.slice();
     this.viewWeatherSrc = data.sort((a, b) => {
       this.last = col;

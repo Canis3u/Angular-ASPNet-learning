@@ -8,6 +8,7 @@ using Microsoft.OpenApi.Models;
 using week2.Models;
 using week2.Service;
 using week2.Service.Interface;
+using week2.Repository;
 
 namespace week2
 {

@@ -94,7 +94,7 @@ namespace week3.Controllers
         }
         private void WriteLog(string name, IHeaderDictionary headers, string body)
         {
-            var token = "token";
+            var token = "";
             if (headers.TryGetValue("my-token", out var values))
                 token = values.ToList().FirstOrDefault();
             Console.WriteLine($"{name},{token},{body}");

@@ -1,0 +1,19 @@
+<div class="container addweathercast-container">
+  <div>
+    <h3 style="text-align: center">Edit Weathercast Data</h3>
+    <div style="text-align: center">
+      <label>TempC</label>
+      <input type="text" title="TempC" [(ngModel)]="addweathercastForm.tempC">
+    </div>
+    <div style="text-align: center">
+      <label>Summary</label>
+      <select [(ngModel)]="addweathercastForm.summary">
+        <option *ngFor="let s of summaryList" value={{s}}>{{s}}</option>
+      </select>
+    </div>
+    <div style="text-align: center">
+      <button color="primary" (click)="confirmupdate()">Update</button>
+    </div>
+  </div>
+  <p-confirmDialog></p-confirmDialog>
+</div>

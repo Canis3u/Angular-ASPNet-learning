@@ -1,3 +1,3 @@
-week2: dotnet core 5 web api
+week3: dotnet core 5 web api
 
-ng_w2: angular 16
+ng_w3: angular 16

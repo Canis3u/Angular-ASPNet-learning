@@ -30,7 +30,7 @@ export class EditWeatherComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((param) => {
-      this.editID = Number(param.get('id'))
+      this.editID = Number(param.get('id'));
       this.getById();
     })
   }
@@ -42,7 +42,6 @@ export class EditWeatherComponent implements OnInit {
         tempC: data.tempC,
         summary: data.summary
       }
-      console.log(this.addweathercastForm.summary);
     });
   }
 
